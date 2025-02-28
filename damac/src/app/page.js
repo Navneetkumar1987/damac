@@ -3,6 +3,7 @@ import Navbar from "../component/navBar"
 import Footer from "../component/footer"
 import RewardCard from "../component/rewardCard"
 import Carousel from "../component/carousel"
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       </div>
       <Carousel />
       <div className="text-center my-4 p-9">
-        <img src="Scrollingtext.png" alt="scrollingText" className="mx-auto scrolling-image {
+        <Image src="Scrollingtext.png" alt="scrollingText" className="mx-auto scrolling-image {
   display: inline-block;
   white-space: nowrap;
   animation: scroll 10s linear infinite;
