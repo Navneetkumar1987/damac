@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <Carousel />
       <div className="text-center my-4 p-9">
-        <Image src="Scrollingtext.png" alt="scrollingText" className="mx-auto scrolling-image {
+        <img src="/Scrollingtext.png" alt="scrollingText" className="mx-auto scrolling-image {
   display: inline-block;
   white-space: nowrap;
   animation: scroll 10s linear infinite;

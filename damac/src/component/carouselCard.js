@@ -5,7 +5,7 @@ import Image from 'next/image';
 const CarouselCard = ({ imageUrl, text1, text2, isNextSymbol, isSmallCard = false, isDateText }) => {
   return (
     <div className={isSmallCard ? "w-[343px] h-[431px] rounded-[20px] overflow-hidden relative shadow-lg" : "w-[800px] h-[445px] rounded-[20px] overflow-hidden relative shadow-lg"}>
-      <Image src={imageUrl} alt="Card Image" className="w-full h-[100%] object-cover" />
+      <img src={imageUrl} alt="Card Image" className="w-full h-[100%] object-cover" width={100} height={100} />
       <div className="absolute bottom-0 flex justify-between left-0 right-0">
         {!isSmallCard && <div className=" text-white text-2xl p-3">
           {isDateText && <p className="text-base font-bold mb-4 font-montserrat">{isDateText}</p>}

@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 const RewardCard = () => {
     const CardMaping = [
-        { imageUrl: "smallCard1.jpg", text1: "Long Service", text2: "Awards", isDateText: 'Mar 2019' },
-        { imageUrl: "smallCard2.jpg", text1: "Achievers", text2: "club", isDateText: 'Dec 2022' },
-        { imageUrl: "smallCard3.jpg", text1: "Damac top", text2: "performers", isDateText: 'Sep 2020' },
+        { imageUrl: "/smallCard1.jpg", text1: "Long Service", text2: "Awards", isDateText: 'Mar 2019' },
+        { imageUrl: "/smallCard2.jpg", text1: "Achievers", text2: "club", isDateText: 'Dec 2022' },
+        { imageUrl: "/smallCard3.jpg", text1: "Damac top", text2: "performers", isDateText: 'Sep 2020' },
     ]
     return (
         <div className="flex justify-center items-center mb-35">
@@ -16,7 +16,7 @@ const RewardCard = () => {
                 <div className="w-1/2 flex flex-col justify-between">
                     <div>
                         <div className="mb-19">
-                            <Image src="/winnerImage.png" alt="Cup Icon" className="w-12 h-12" />
+                            <img src="/winnerImage.png" alt="Cup Icon" className="w-12 h-12" width={100} height={100}/>
                         </div>
                         <div className="mb-8">
                             <h2 className="text-[40px] font-medium text font-termina-test">Rewards</h2>
@@ -41,11 +41,11 @@ const RewardCard = () => {
                 {/* Second Section 2*/}
                 <div className="w-1/2 flex justify-center items-center">
                     <div className="w-[656px] h-[629px] rounded-[20px] overflow-hidden relative shadow-lg">
-                        <Image src={'smallCard1.jpg'} alt="Card Image" className="w-full h-[100%] object-cover" />
+                        <img src={'/smallCard1.jpg'} alt="Card Image" className="w-full h-[100%] object-cover" width={100} height={100}/>
                         <div className="absolute inset-0 flex justify-center items-center">
                             <button className="mb-2">
-                                <Image src={'playIcon.jpg'} alt="palyIcon" className="rounded-[50px] mb-4" />
-                                <Image src={'playvideo.png'} alt="palyIcon" className="bg-color-red" />
+                                <img src={'/playIcon.jpg'} alt="palyIcon" className="rounded-[50px] mb-4" width={100} height={100} />
+                                <img src={'/playvideo.png'} alt="palyIcon" className="bg-color-red"  width={100} height={100} />
                             </button>
                         </div>
                         <div className="absolute bottom-3 w-full flex justify-between items-center p-10">

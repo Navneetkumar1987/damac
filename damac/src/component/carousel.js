@@ -8,11 +8,11 @@ const Carousel = () => {
 
 
   const CardMaping = [
-    { imageUrl: "carousel1.jpg", primaryText: "Damac awards $160m contracts to engineering construction and reconstruction company", buttonText: "Read more" },
-    { imageUrl: "carousel2.jpg", primaryText: "Damac awards $160m contracts to engineering construction and reconstruction company", buttonText: "Read more" },
-    { imageUrl: "carousel3.jpg", primaryText: "Damac awards $160m contracts to engineering construction and reconstruction company", buttonText: "Read more" },
-    { imageUrl: "carousel4.jpg", primaryText: "Damac awards $160m contracts to engineering construction and reconstruction company", buttonText: "Read more" },
-    { imageUrl: "carousel5.jpg", primaryText: "Damac awards $160m contracts to engineering construction and reconstruction company", buttonText: "Read more" },
+    { imageUrl: "/carousel1.jpg", primaryText: "Damac awards $160m contracts to engineering construction and reconstruction company", buttonText: "Read more" },
+    { imageUrl: "/carousel2.jpg", primaryText: "Damac awards $160m contracts to engineering construction and reconstruction company", buttonText: "Read more" },
+    { imageUrl: "/carousel3.jpg", primaryText: "Damac awards $160m contracts to engineering construction and reconstruction company", buttonText: "Read more" },
+    { imageUrl: "/carousel4.jpg", primaryText: "Damac awards $160m contracts to engineering construction and reconstruction company", buttonText: "Read more" },
+    { imageUrl: "/carousel5.jpg", primaryText: "Damac awards $160m contracts to engineering construction and reconstruction company", buttonText: "Read more" },
   ]
   const handlePrev = () => {
     setActiveIndex((prevIndex) => (prevIndex === 0 ? CardMaping.length - 1 : prevIndex - 1));

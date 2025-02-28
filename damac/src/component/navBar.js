@@ -11,10 +11,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   const CardMaping = [
-    { imageUrl: "Card1.png", text1: "We Enable", text2: "Aspirations" },
-    { imageUrl: "Card2.jpg", text1: "we Offer ", text2: "Careers" },
-    { imageUrl: "Card3.jpg", text1: "We", text2: "Cars" },
-    { imageUrl: "Card4.jpg", text1: "we are", text2: " Global" },
+    { imageUrl: "/Card1.png", text1: "We Enable", text2: "Aspirations" },
+    { imageUrl: "/Card2.jpg", text1: "we Offer ", text2: "Careers" },
+    { imageUrl: "/Card3.jpg", text1: "We", text2: "Cars" },
+    { imageUrl: "/Card4.jpg", text1: "we are", text2: " Global" },
   ]
 
   return (<>
@@ -22,7 +22,7 @@ const Navbar = () => {
       <nav className=" p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white text-lg font-bold">
-            <Image className="h-auto max-w-full w-[137px] h-[17px]" src="logoImage.png" alt="image description" width={137} height={17} />
+            <img className="h-auto max-w-full w-[137px] h-[17px]" src="/logoImage.png" alt="image description" width={137} height={17} />
          </div>
           <div className="hidden md:flex space-x-4">
             <div className="relative group p-4">
@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
           <div className="md:hidden">
             <button onClick={toggleDropdown} className="text-gray-300 hover:text-white focus:outline-none">
-              <Image src="search.svg" alt="search" className="w-8 h-8" width={32} height={32}/>
+              <img src="search.svg" alt="search" className="w-8 h-8" width={32} height={32}/>
             </button>
           </div>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
               </svg>
             </button>
             <div className="flex items-center space-x-2">
-              <Image src="userImage.jpg" alt="User Image" className="w-10 h-10 rounded-full mr-4 " widht={40} height={40} />
+              <img src="/userImage.jpg" alt="User Image" className="w-10 h-10 rounded-full mr-4 " width={40} height={40} />
               <div>
                 <div className="text-white text-sm font-semibold text-sm font-poppins">Muhammad Khalid</div>
                 <div className="text-xs text-white font-semibold text-xs font-poppins">Technical Web Lead</div>
@@ -103,7 +103,7 @@ const Navbar = () => {
       <div className="text-center my-4 p-10">
         <p className="text-xl text-white mb-6 mt-10 tracking-[.75rem] text-lg font-extrabold Pglo font-montserrat">HELLO MOHAMMAD KHALID</p>
         <p className="text-xl  flex justify-center text-white mb-8">
-          <Image src="peoplefirst.png" alt="people first" width={32} height={32}/>
+          <img src="/peoplefirst.png" alt="people first" width={32} height={32}/>
         </p>
         <p className="text-xl text-white mb-8 text-[22px] font-normal font-montserrat">our commitment to nurture every single member of Damac</p>
       </div>
