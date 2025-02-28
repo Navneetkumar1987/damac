@@ -55,6 +55,7 @@ const RewardCard = () => {
                                 <button className="w-[156px] h-[49px] rounded-[90px] bg-white text-black mb-10 p-2">
                                     <p className="text-sm font-semibold font-montserrat">View Details</p>
                                 </button>
+                                <img src="Carousel.png" alt="caousal image"/>
                             </div>
                         </div>
                     </div>
